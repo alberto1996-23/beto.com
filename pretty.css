@@ -1,0 +1,21 @@
+html {
+    font-size: 1em;
+    line-height: 30px;
+    font-family: "Helvetica Neue", Arial Rounded MT Bold, Arial , sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+figure {
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background: rgba(15, 15, 15, 0.4);
+}
