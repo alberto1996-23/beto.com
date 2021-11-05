@@ -1,21 +1,40 @@
 html {
-    font-size: 1em;
-    line-height: 30px;
+    font-size: 1.125em;
+    line-height: 24px;
     font-family: "Helvetica Neue", Arial Rounded MT Bold, Arial , sans-serif;
 }
 
+.center-align {
+    text-align: center;
+}
+
 img {
-    display: block;
-    max-width: 100%;
-}
-
-figure {
-    position: relative;
-}
-
-figcaption {
-    position: absolute;
     width: 100%;
-    bottom: 0px;
-    background: rgba(15, 15, 15, 0.4);
+    display: flex;
+}
+
+#less-line-space {
+    line-height: 0.8em;
+}
+#navs li{
+    margin-bottom: 4px;
+    background-color: white;
+    padding-right: 4px;
+}
+
+#navs a {
+    text-decoration: none;
+}
+
+#navs a:hover{
+    display: block;
+    background-color: pink;
+}
+
+.no-bullet {
+    list-style-type: none;
+}
+
+@media screen and (min-width: 600px) {
+    
 }
