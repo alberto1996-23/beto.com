@@ -1,40 +1,85 @@
-html {
-    font-size: 1.125em;
-    line-height: 24px;
-    font-family: "Helvetica Neue", Arial Rounded MT Bold, Arial , sans-serif;
-}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
-.center-align {
-    text-align: center;
+html{
+  font-size: 22px;
+  line-height: 33px;
+  font-family: "Helvetica Neue", Arial Rounded MT Bold, Arial , sans-serif;
 }
-
-img {
-    width: 100%;
-    display: flex;
+img{
+  width: 80%;
 }
-
-#less-line-space {
-    line-height: 0.8em;
+p{
+  padding: 5px;
+}
+.center-align{
+  text-align: center;
+  font-size: 58px;
+  font-family: 'Estonia', cursive;
+  padding: 17px 17px;
+  margin: 5px 5px;
+}
+.bullet{
+  list-style-type: square;
+  margin: 15px;
+  padding-left: 20px;
+}
+.jobs{
+  line-height: 30px;
+}
+.edu{
+  line-height: 30px;
+}
+.edu-and-exp-heading{
+  margin: 20px;
+  font-size: 27px;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}
+.gallery-pic{
+  margin: 24px;
+}
+.obj-and-skill-heading{
+  margin: 20px;
+  font-size: 27px;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}
+.obj-desc{
+  padding-left: 7px;
+}
+.skills{
+  line-height: 30px;
+}
+#disc{
+  font-size: 12px;
+}
+#gallery{
+  display: flex;
+  padding: 6px;
+  margin: 12px;
+  justify-content: space-around;
+  background-color: yellow;
+}
+#name{
+  text-align: center;
+  font-size: 43px;
+  font-family: 'Bebas Neue', cursive;
+  padding-top: 27px;
+}
+#navs ul {
+  list-style-type: none;
+  margin: 20px 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #D47AE8;
 }
 #navs li{
-    margin-bottom: 4px;
-    background-color: white;
-    padding-right: 4px;
+  float: left;
 }
-
-#navs a {
-    text-decoration: none;
-}
-
-#navs a:hover{
-    display: block;
-    background-color: pink;
-}
-
-.no-bullet {
-    list-style-type: none;
-}
-
-@media screen and (min-width: 600px) {
-    
+#navs li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
