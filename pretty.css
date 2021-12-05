@@ -6,59 +6,85 @@ html{
   font-family: "Helvetica Neue", Arial Rounded MT Bold, Arial , sans-serif;
 }
 img{
-  width: 80%;
+  width: 70%;
 }
 p{
   padding: 5px;
-}
-.center-align{
+  line-height: inherit;
   text-align: center;
-  font-size: 58px;
-  font-family: 'Estonia', cursive;
-  padding: 17px 17px;
-  margin: 5px 5px;
 }
 .bullet{
   list-style-type: square;
   margin: 15px;
   padding-left: 20px;
 }
-.jobs{
+.center-align{
+  text-align: center;
+  font-size: 58px;
+  font-family: 'Estonia', cursive;
+  padding: 17px;
+  margin: 5px;
+}
+.contact-body-background{
+  background-color: #DFD8CA;
+}
+.contact-main-background{
+  background-color:  #105652;
+  margin: 24px 14px;
+  padding: 20px;
+}
+.edu, .jobs{
   line-height: 30px;
 }
-.edu{
-  line-height: 30px;
-}
-.edu-and-exp-heading{
+.edu-and-exp-heading, .obj-and-skill-heading{
   margin: 20px;
   font-size: 27px;
   text-align: center;
   font-family: 'Bebas Neue', cursive;
 }
-.gallery-pic{
-  margin: 24px;
-}
-.obj-and-skill-heading{
-  margin: 20px;
-  font-size: 27px;
+.gamer-font{
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: underline;
   text-align: center;
-  font-family: 'Bebas Neue', cursive;
+}
+.home-body-background{
+  background-color: #0F2C67;
+}
+.home-main-background{
+  background-color: #98BAE7;
+  margin: 24px 14px;
+  padding: 20px;
+}
+.interest-body-background{
+  background-color: #064635;
+}
+.interest-main-background{
+  background-color: #519259;
+  margin: 24px 14px;
+  padding: 20px;
 }
 .obj-desc{
   padding-left: 7px;
+  text-align: center;
 }
 .skills{
   line-height: 30px;
 }
+.switch-heading-and-desc{
+  grid-area: a;
+}
+.switch-pics img{
+  grid-area: b;
+  padding-left: 200px
+}
 #disc{
   font-size: 12px;
 }
-#gallery{
-  display: flex;
-  padding: 6px;
-  margin: 12px;
-  justify-content: space-around;
-  background-color: yellow;
+#gallery-grid{
+  display: grid;
+  grid-gap: 4px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(150px, auto);
 }
 #name{
   text-align: center;
@@ -66,20 +92,43 @@ p{
   font-family: 'Bebas Neue', cursive;
   padding-top: 27px;
 }
-#navs ul {
+#navs-home ul, #navs-interests ul, #navs-resume ul, #navs-contact ul{
   list-style-type: none;
   margin: 20px 10px;
   padding: 0;
   overflow: hidden;
-  background-color: #D47AE8;
 }
-#navs li{
+#navs-home li, #navs-interests li, #navs-resume li, #navs-contact li{
   float: left;
 }
-#navs li a {
+#navs-home li a, #navs-interests li a, #navs-resume li a, #navs-contact li a{
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+#navs-interests ul {
+  background-color: #F0BB62;
+}
+#navs-home ul{
+  background-color: #D47AE8;
+}
+#navs-resume ul{
+  background-color: #000000;
+}
+#navs-contact ul{
+  background-color: #B91646;
+}
+#switch{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 110px);
+  grid-template-areas:
+    "a a b b"
+    "a a b b"
+    "a a b b";
+  grid-gap: 40px;
+  align-content:space-between;
+  justify-content: space-between;
 }
