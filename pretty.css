@@ -6,7 +6,7 @@ html{
   font-family: "Helvetica Neue", Arial Rounded MT Bold, Arial , sans-serif;
 }
 img{
-  width: 70%;
+  width: 80%;
 }
 p{
   padding: 5px;
@@ -20,10 +20,10 @@ p{
 }
 .center-align{
   text-align: center;
-  font-size: 58px;
+  font-size: 78px;
   font-family: 'Estonia', cursive;
-  padding: 17px;
-  margin: 5px;
+  padding: 7px;
+  margin: 35px;
 }
 .contact-body-background{
   background-color: #DFD8CA;
@@ -33,6 +33,12 @@ p{
   margin: 24px 14px;
   padding: 20px;
 }
+.elegant-font{
+  font-family: 'Luxurious Script', cursive;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 57px;
+}
 .edu, .jobs{
   line-height: 30px;
 }
@@ -41,6 +47,18 @@ p{
   font-size: 27px;
   text-align: center;
   font-family: 'Bebas Neue', cursive;
+}
+.fashion{
+  width: 270px;
+  height: 270px;
+  float: right;
+}
+.friend-code{
+  width: 270px;
+  height: 270px;
+  float: left;
+  margin-top: -100px;
+  margin-left: -120px;
 }
 .gamer-font{
   font-family: 'Press Start 2P', cursive;
@@ -63,9 +81,26 @@ p{
   margin: 24px 14px;
   padding: 20px;
 }
+.makeup{
+  width: 270px;
+  height: 270px;
+  float: left;
+}
+.makeup-and-fashion-desc{
+  grid-area: d;
+}
+.makeup-and-fashion-pics{
+  grid-area: c;
+}
 .obj-desc{
   padding-left: 7px;
   text-align: center;
+}
+.OLED-model{
+  width: 270px;
+  height: 270px;
+  float: left;
+  margin-left: 109px;
 }
 .skills{
   line-height: 30px;
@@ -75,7 +110,7 @@ p{
 }
 .switch-pics img{
   grid-area: b;
-  padding-left: 200px
+  padding-left: 200px;
 }
 #disc{
   font-size: 12px;
@@ -85,6 +120,19 @@ p{
   grid-gap: 4px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: minmax(150px, auto);
+}
+#interests{
+  display: grid;
+  grid-template-columns: repeat(auto, auto);
+  grid-template-rows: repeat(auto, auto);
+  grid-template-areas:
+    "a a a b b b"
+    "a a a b b b"
+    "c c c d d d"
+    "c c c d d d";
+  grid-gap: 10px;
+  align-content: space-between;
+  justify-content: space-between;
 }
 #name{
   text-align: center;
@@ -119,16 +167,4 @@ p{
 }
 #navs-contact ul{
   background-color: #B91646;
-}
-#switch{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 110px);
-  grid-template-areas:
-    "a a b b"
-    "a a b b"
-    "a a b b";
-  grid-gap: 40px;
-  align-content:space-between;
-  justify-content: space-between;
 }
