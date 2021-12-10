@@ -1,19 +1,9 @@
 'use strict';
 
-// Global variables
-var importantStuff = {
-
+document.querySelector('.fb-icon').onmouseover = function() {
+  mouseOver()
 };
 
-// Functions, Classes
-var someFunction = function() {
-    //blee-blah
-};
-
-//Down to business
-someFunction(importantStuff);
-needyStuff();
-// Function expressions
-function needyStuff(){
-    //blee-blah
-};
+function mouseOver() {
+  alert("Only cool People!!")
+}
